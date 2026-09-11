@@ -55,62 +55,13 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(5,5,15,0.85) 0%, rgba(5,5,15,0.4) 50%, transparent 100%);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 520px;
-}
-
-.hero-badge {
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  color: #7ab3d4;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-}
-
-.hero-title {
-  font-size: 64px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.2;
-  margin-bottom: 16px;
-  word-break: keep-all;
-}
-
-.hero-title span {
-  color: #5ba3cc;
-}
-
+  background: linear-gradient
 .hero-sub {
   font-size: 14px;
   font-weight: 300;
   color: rgba(255,255,255,0.7);
   margin-bottom: 6px;
 }
-
-.hero-date {
-  font-size: 12px;
-  font-weight: 300;
-  color: #5ba3cc;
-}
-
-/* ── NAV TABS ── */
-.nav-tabs {
-  background: #1a1a2e;
-  border-bottom: 2px solid #2a2a4e;
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  padding: 0 20px;
-  gap: 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
   scrollbar-width: none;
 }
 .nav-tabs::-webkit-scrollbar { display: none; }
@@ -3809,122 +3760,7 @@ body {
     <div class="car-section-header">
       <div class="car-badge">EQ</div>
       <div class="car-section-info">
-        <div class="car-brand">Mercedes-Benz</div>
-        <div class="car-model-name">EQA <span style="font-size:14px; font-weight:400; color:#7ab3d4; margin-left:8px;">MY27</span></div>
-      </div>
-    </div>
-    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;"><table class="price-table" style="width:100%;">
-      <thead><tr><th>모델명</th><th>차량가격</th><th>기본 할인</th><th>장기렌트</th></tr></thead>
-      <tbody>
-        <tr class="my27-row"><td class="model-cell">EQA 250 Progressive</td><td class="price-cell"><span class="stock-price-main">70,800,000원</span></td><td class="col-promo"><span style="display:block;">10%</span><span style="display:block;font-size:11px;font-weight:600;color:#2980b9;margin-top:2px;">+4% 벤츠파이낸셜</span></td><td class="col-rent">+3%</td></tr>
-        <tr class="my27-row"><td class="model-cell">EQA 250 AMG Line</td><td class="price-cell"><span class="stock-price-main">76,700,000원</span></td><td class="col-promo"><span style="display:block;">10%</span><span style="display:block;font-size:11px;font-weight:600;color:#2980b9;margin-top:2px;">+4% 벤츠파이낸셜</span></td><td class="col-rent">+3%</td></tr>
-      </tbody>
-    </table></div>
-    <div class="rent-note">※ 장기렌트 이용 시 전 모델 +3% 추가 할인이 적용됩니다. Fleet 할인은 별도 조건으로, 장기렌트 추가 현금할인과 중복 여부는 별도로 확인해야 합니다.</div>
-  </div>
-</div>
-</div>
-
-<!-- Maybach -->
-<div id="tab-maybach" class="section">
-  <div class="car-section">
-    <div class="car-section-header">
-      <div class="eclass-header-wrap">
-        <div class="eclass-title-group">
-          <div class="car-badge" style="font-size:10px;">MYB</div>
-          <div class="car-section-info">
-            <div class="car-brand">Mercedes-Maybach</div>
-            <div class="car-model-name">Maybach</div>
-          </div>
-        </div>
-        <div class="eclass-cta-group maybach-cta-group">
-          <a href="#" class="maybach-detail-btn" target="_blank" rel="noopener">
-            <svg class="eclass-btn-icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 9.5h1M18 9.5h1M2.5 9.5H17.5M5 9.5L7 4.5h6l2 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-              <ellipse cx="5.5" cy="10.5" rx="1.5" ry="1.5" stroke="currentColor" stroke-width="1.3"/>
-              <ellipse cx="14.5" cy="10.5" rx="1.5" ry="1.5" stroke="currentColor" stroke-width="1.3"/>
-              <path d="M7 4.5H5.5L3 7.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-            </svg>
-            마이바흐 상세보기
-            <span class="eclass-btn-arrow">→</span>
-          </a>
-          <span class="eclass-cta-hint">Mercedes-Maybach 전체 라인업과 모델별 상세 정보를 확인해보세요.</span>
-        </div>
-      </div>
-    </div>
-    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;"><table class="price-table" style="width:100%;">
-      <thead><tr><th>모델명</th><th>차량가격</th><th>기본 할인</th><th>장기렌트</th></tr></thead>
-      <tbody>
-        <tr><td class="model-cell">Mercedes-Maybach S 580</td><td class="price-cell"><span class="stock-price-main">317,000,000원</span></td><td class="col-promo">9%</td><td class="col-rent">+3%</td></tr>
-        <tr><td class="model-cell">Mercedes-Maybach S 680</td><td class="price-cell"><span class="stock-price-main">403,000,000원</span></td><td class="col-promo">9%</td><td class="col-rent">+3%</td></tr>
-        <tr><td class="model-cell">Mercedes-Maybach S 680 "V12 Edition"</td><td class="price-cell"><span class="stock-price-main">479,400,000원</span></td><td class="col-dash">-</td><td class="col-rent">+3%</td></tr>
-        <tr><td class="model-cell">Mercedes-Maybach SL 680</td><td class="price-cell"><span class="stock-price-main">344,000,000원</span></td><td class="col-promo">2%</td><td class="col-rent">+3%</td></tr>
-        <tr><td class="model-cell">Mercedes-Maybach GLS 600</td><td class="price-cell"><span class="stock-price-main">295,000,000원</span></td><td class="col-promo">5%</td><td class="col-rent">+3%</td></tr>
-        <tr><td class="model-cell">Mercedes-Maybach GLS 600 MANUFAKTUR</td><td class="price-cell"><span class="stock-price-main">337,000,000원</span></td><td class="col-promo">5%</td><td class="col-rent">+3%</td></tr>
-        <tr><td class="model-cell">Mercedes-Maybach EQS 680 SUV</td><td class="price-cell"><span class="stock-price-main">235,000,000원</span></td><td class="col-dash">-</td><td class="col-rent">+3%</td></tr>
-        <tr style="background:rgba(184,151,90,0.07);">
-          <td colspan="4" style="font-size:12px; font-weight:700; color:#f0c040; padding:10px 12px; letter-spacing:0.1em;">MY27</td>
-        </tr>
-        <tr class="my27-row" data-model-id="mercedes-maybach-s-580-my27"><td class="model-cell">Mercedes-Maybach S 580</td><td class="price-cell"><span class="stock-price-main">317,000,000원</span></td><td class="col-dash">-</td><td class="col-rent">+3%</td></tr>
-        <tr class="my27-row" data-model-id="mercedes-maybach-s-580-manufaktur-my27"><td class="model-cell">Mercedes-Maybach S 580 MANUFAKTUR</td><td class="price-cell"><span class="stock-price-main">336,000,000원</span></td><td class="col-dash">-</td><td class="col-rent">+3%</td></tr>
-        <tr class="my27-row" data-model-id="mercedes-maybach-s-680-my27"><td class="model-cell">Mercedes-Maybach S 680</td><td class="price-cell"><span class="stock-price-main">407,000,000원</span></td><td class="col-dash">-</td><td class="col-rent">+3%</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="rent-note">※ 장기렌트 이용 시 전 모델 +3% 추가 할인이 적용됩니다. Fleet 할인은 별도 조건으로, 장기렌트 추가 현금할인과 중복 여부는 별도로 확인해야 합니다.</div>
-</div>
-</div>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-logo">
-    <img src="data:image/png;base64,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" style="width:28px;height:28px;object-fit:contain;" />
-    <span style="color:#fff;font-size:14px;font-weight:500;font-family:'Pretendard', 'Noto Sans KR', sans-serif;">메르세데스 벤츠 의정부전시장</span>
-  </div>
-  <p class="footer-text" style="margin-top:6px;">© 2026 Motor One · Mercedes-Benz Official Dealer</p>
-</footer>
-
-<script>
-/* =====================================================
-   ★★★★★ 판매조건은 여기만 수정하세요 ★★★★★
-
-   basic   = 기본 할인
-   finance = 벤츠파이낸셜 추가 할인
-   rent    = 장기렌트 추가 할인
-
-   null = 조건 없음
-
-   예:
-   { basic: 10, finance: 4, rent: 3 }
-
-   숫자만 변경하면 전체 가격표에 자동 반영됩니다.
-   ===================================================== */
 const SALES_CONDITIONS = {
-  // A-Class
-  "a-220-hatch": { basic: 10, finance: null, rent: 3 },
-  "mercedes-amg-a-45-s-4matic": { basic: 7, finance: 4, rent: 3 },
-  // MY27
-  "mercedes-amg-a-45-s-4matic-my27": { basic: null, finance: null, rent: 3 },
-  "a-220-sedan": { basic: 5, finance: null, rent: 3 },
-  "mercedes-amg-a-35-4matic": { basic: null, finance: null, rent: 3 },
-  // CLA
-  "cla-250-4matic-amg-line": { basic: 7, finance: null, rent: 3 },
-  "mercedes-amg-cla-45-s-4matic": { basic: 5, finance: null, rent: 3 },
-  "mercedes-amg-cla-45-s-4matic-final-edition": { basic: null, finance: null, rent: 3 },
-  // CLA MY27 · ALL-NEW (판매조건 미확정 — basic/finance는 확정 후 숫자만 입력)
-  "cla-200-electric-essential-my27": { basic: null, finance: null, rent: 3 },
-  "cla-200-electric-advanced-my27": { basic: null, finance: null, rent: 3 },
-  "cla-200-electric-amg-line-launch-edition-my27": { basic: null, finance: null, rent: 3 },
-  "cla-250-plus-electric-my27": { basic: null, finance: null, rent: 3 },
-  "cla-250-plus-electric-amg-line-launch-edition-my27": { basic: null, finance: null, rent: 3 },
-  "cla-220-my27": { basic: null, finance: null, rent: 3 },
-  "cla-220-amg-line-launch-edition-my27": { basic: null, finance: null, rent: 3 },
-  // GLA · GLB
-  "gla-250-4matic-amg-line": { basic: 9, finance: 4, rent: 3 },
-  // MY27
-  "gla-250-4matic-amg-line-my27": { basic: 9, finance: 4, rent: 3 },
-  "glb-200-d": { basic: null, finance: null, rent: 3 },
-  "glb-250-4matic": { basic: 9, finance: 4, rent: 3 },
   "mercedes-amg-glb-35-4matic": { basic: 9, finance: 4, rent: 3 },
   // C-Class
   "c-200-avantgarde": { basic: 10, finance: 4, rent: 3 },
